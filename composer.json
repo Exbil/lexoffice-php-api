@@ -1,0 +1,36 @@
+{
+  "name": "exbil/lexoffice-php-api",
+  "type": "library",
+  "description": "Simple API Integration for Lex-Office",
+  "keywords": [
+    "lex-office",
+    "lexoffice",
+    "rest",
+    "api"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^7.4 | ^8",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "guzzlehttp/guzzle": "^6.2 | ^7.0",
+    "psr/cache": "^1.0 | ^2.0 | ^3.0"
+  },
+  "require-dev": {
+    "fzaninotto/faker": "^1.9.1",
+    "phpunit/phpunit": "^9.0",
+    "symfony/cache": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Exbil\\LexOffice\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Exbil\\LexOffice\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
