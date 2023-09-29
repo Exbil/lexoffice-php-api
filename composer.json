@@ -6,9 +6,21 @@
     "lex-office",
     "lexoffice",
     "rest",
+    "php",
     "api"
   ],
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Efe Bagri",
+      "email": "composer@exbil.net",
+      "homepage": "https://www.exbil.net/"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/exbil/lexoffice-php-api/issues",
+    "source": "https://github.com/exbil/lexoffice-php-api"
+  },
   "require": {
     "php": "^7.4 | ^8",
     "ext-json": "*",
