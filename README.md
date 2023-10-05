@@ -10,8 +10,17 @@
 * Extensions: [Composer](https://getcomposer.org/), [PHP-JSON](https://www.php.net/manual/en/book.json.php)
 
 # ⚒️ Install
-```bash
+In the root of your project execute the following:
+```sh
 composer require exbil/lexoffice-php-api
+```
+or add this to your `composer.json` file:
+```json
+{
+  "require": {
+    "exbil/lexoffice-php-api": "^0.14.1"
+  }
+}
 ```
 
 # 📑 Usage
