@@ -1,9 +1,5 @@
 # 💾 Lexoffice PHP API
 
-<div align="center">
-    <a href="https://www.exbil.net"><img src="https://vweb01.exbil.net/images/logos/ylx31Wjx3YY.png" width="546" alt="discord.js" /></a>
-</div>
-
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=exbil.lexoffice-php-api)
 ![](https://img.shields.io/badge/stable-v.1.0-informational?style=flat&logoColor=white&color=6aa6f8)
 ![](https://img.shields.io/badge/license-MIT-informational?style=flat&logoColor=white&color=6aa6f8)
