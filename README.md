@@ -52,7 +52,6 @@ $api->setCacheInterface($cacheInterface);
 ### 🔚 Contact Endpoint
 
 ```php
-
 // get a page
 /** @var \exbil\LexOffice\LexOfficeClient $api */
 $client = $api->contact();
@@ -62,14 +61,14 @@ $client->sortDirection = 'ASC';
 $client->sortProperty = 'name';
 
 // get a page
-$response = $client->getPage(0);    
+$response = $client->contact()->getPage(0);    
 
 //get all
-$response = $client->getAll();
+$response = $client->contact()->getAll();
 
 // other methods
-$response = $client->get($entityId);
-$response = $client->create($data);
+$response = $client->contact()->get($entityId);
+$response = $client->contact()->create($data);
 ```
 
 ### 🗺️ Country Endpoint
