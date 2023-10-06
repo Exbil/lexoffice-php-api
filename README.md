@@ -174,10 +174,10 @@ $response = $client->getAll();
 ```php
 $client = $api->voucherlist();
 
-$client->size = 100;
-$client->sortDirection = 'DESC';
-$client->sortColumn = 'voucherNumber';
-$client->types = [
+$client->voucherlist()->size = 100;
+$client->voucherlist()->sortDirection = 'DESC';
+$client->voucherlist()->sortColumn = 'voucherNumber';
+$client->voucherlist()->types = [
     'salesinvoice',
     'salescreditnote',
     'purchaseinvoice',
@@ -188,7 +188,7 @@ $client->types = [
     'orderconfirmation',
     'quotation'
 ];
-$client->statuses = [
+$client->voucherlist()->statuses = [
     'draft',
     'open',
     'paid',
@@ -200,13 +200,13 @@ $client->statuses = [
 ];
 
 // get everything what we can, not recommend:
-//$client->setToEverything()
+//$client->voucherlist()->setToEverything()
 
 // get a page
-$response = $client->getPage(0);
+$response = $client->voucherlist()->getPage(0);
 
 //get all
-$response = $client->getAll();
+$response = $client->voucherlist()->getAll();
 ```
 
 ### 📁 File Endpoint
