@@ -154,7 +154,6 @@ $response = $api->profile()->get();
 
 ### 📜 Recurring Templates Endpoint
 ```php
-
 // get single entitiy
 $response = $api->recurringTemplate()->get($entityId);
 
