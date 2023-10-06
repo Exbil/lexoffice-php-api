@@ -61,14 +61,14 @@ $client->sortDirection = 'ASC';
 $client->sortProperty = 'name';
 
 // get a page
-$response = $client->contact()->getPage(0);    
+$response = $client->getPage(0);    
 
 //get all
-$response = $client->contact()->getAll();
+$response = $client->getAll();
 
 // other methods
-$response = $client->contact()->get($entityId);
-$response = $client->contact()->create($data);
+$response = $client->get($entityId);
+$response = $client->create($data);
 ```
 
 ### 🗺️ Country Endpoint
@@ -174,10 +174,10 @@ $response = $client->getAll();
 ```php
 $client = $api->voucherlist();
 
-$client->voucherlist()->size = 100;
-$client->voucherlist()->sortDirection = 'DESC';
-$client->voucherlist()->sortColumn = 'voucherNumber';
-$client->voucherlist()->types = [
+$client->size = 100;
+$client->sortDirection = 'DESC';
+$client->sortColumn = 'voucherNumber';
+$client->types = [
     'salesinvoice',
     'salescreditnote',
     'purchaseinvoice',
@@ -188,7 +188,7 @@ $client->voucherlist()->types = [
     'orderconfirmation',
     'quotation'
 ];
-$client->voucherlist()->statuses = [
+$client->statuses = [
     'draft',
     'open',
     'paid',
@@ -200,13 +200,13 @@ $client->voucherlist()->statuses = [
 ];
 
 // get everything what we can, not recommend:
-//$client->voucherlist()->setToEverything()
+//$client->setToEverything()
 
 // get a page
-$response = $client->voucherlist()->getPage(0);
+$response = $client->getPage(0);
 
 //get all
-$response = $client->voucherlist()->getAll();
+$response = $client->getAll();
 ```
 
 ### 📁 File Endpoint
