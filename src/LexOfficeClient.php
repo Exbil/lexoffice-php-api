@@ -9,9 +9,11 @@ use Exbil\LexOffice\DownPaymentInvoice\DownPaymentInvoice as DownPaymentInvoiceC
 use Exbil\LexOffice\Event\Event as EventClient;
 use Exbil\LexOffice\File\File as FileClient;
 use Exbil\LexOffice\Invoice\Invoice as InvoiceClient;
+use Exbil\LexOffice\OrderConfirmation\OrderConfirmation;
 use Exbil\LexOffice\OrderConfirmation\OrderConfirmation as OrderConfirmationClient;
 use Exbil\LexOffice\Payment\Payment as PaymentClient;
 use Exbil\LexOffice\PaymentCondition\PaymentCondition as PaymentConditionClient;
+use Exbil\LexOffice\PostingCategory\PostingCategory;
 use Exbil\LexOffice\Profile\Profile as ProfileClient;
 use Exbil\LexOffice\PostingCategory\PostingCategory as PostingCategoryClient;
 use Exbil\LexOffice\Quotation\Quotation as QuotationClient;
@@ -162,7 +164,7 @@ class LexOfficeClient
     /**
      * @return ContactClient
      */
-    public function contact()
+    public function contact(): ContactClient
     {
         return new ContactClient($this);
     }
@@ -170,7 +172,7 @@ class LexOfficeClient
     /**
      * @return CountryClient
      */
-    public function country()
+    public function country(): CountryClient
     {
         return new CountryClient($this);
     }
@@ -178,7 +180,7 @@ class LexOfficeClient
     /**
      * @return EventClient
      */
-    public function event()
+    public function event(): EventClient
     {
         return new EventClient($this);
     }
@@ -186,7 +188,7 @@ class LexOfficeClient
     /**
      * @return InvoiceClient
      */
-    public function invoice()
+    public function invoice(): InvoiceClient
     {
         return new InvoiceClient($this);
     }
@@ -194,7 +196,7 @@ class LexOfficeClient
     /**
      * @return DownPaymentInvoiceClient
      */
-    public function downPaymentInvoice()
+    public function downPaymentInvoice(): DownPaymentInvoiceClient
     {
         return new DownPaymentInvoiceClient($this);
     }
@@ -202,7 +204,7 @@ class LexOfficeClient
     /**
      * @return OrderConfirmationClient
      */
-    public function orderConfirmation()
+    public function orderConfirmation(): OrderConfirmationClient
     {
         return new OrderConfirmationClient($this);
     }
@@ -210,7 +212,7 @@ class LexOfficeClient
     /**
      * @return PaymentClient
      */
-    public function payment()
+    public function payment(): PaymentClient
     {
         return new PaymentClient($this);
     }
@@ -218,7 +220,7 @@ class LexOfficeClient
     /**
      * @return PaymentConditionClient
      */
-    public function paymentCondition()
+    public function paymentCondition(): PaymentConditionClient
     {
         return new PaymentConditionClient($this);
     }
@@ -226,7 +228,7 @@ class LexOfficeClient
     /**
      * @return CreditNoteClient
      */
-    public function creditNote()
+    public function creditNote(): CreditNoteClient
     {
         return new CreditNoteClient($this);
     }
@@ -234,7 +236,7 @@ class LexOfficeClient
     /**
      * @return QuotationClient
      */
-    public function quotation()
+    public function quotation(): QuotationClient
     {
         return new QuotationClient($this);
     }
@@ -242,7 +244,7 @@ class LexOfficeClient
     /**
      * @return VoucherClient
      */
-    public function voucher()
+    public function voucher(): VoucherClient
     {
         return new VoucherClient($this);
     }
@@ -250,7 +252,7 @@ class LexOfficeClient
     /**
      * @return RecurringTemplateClient
      */
-    public function recurringTemplate()
+    public function recurringTemplate(): RecurringTemplateClient
     {
         return new RecurringTemplateClient($this);
     }
@@ -258,7 +260,7 @@ class LexOfficeClient
     /**
      * @return VoucherlistClient
      */
-    public function voucherlist()
+    public function voucherlist(): VoucherlistClient
     {
         return new VoucherlistClient($this);
     }
@@ -266,7 +268,7 @@ class LexOfficeClient
     /**
      * @return ProfileClient
      */
-    public function profile()
+    public function profile(): ProfileClient
     {
         return new ProfileClient($this);
     }
@@ -274,7 +276,7 @@ class LexOfficeClient
     /**
      * @return PostingCategoryClient
      */
-    public function postingCategory()
+    public function postingCategory(): PostingCategoryClient
     {
         return new PostingCategoryClient($this);
     }
@@ -282,7 +284,7 @@ class LexOfficeClient
     /**
      * @return FileClient
      */
-    public function file()
+    public function file(): FileClient
     {
         return new FileClient($this);
     }
